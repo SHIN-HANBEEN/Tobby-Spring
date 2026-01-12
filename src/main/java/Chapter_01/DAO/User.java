@@ -1,4 +1,4 @@
-package DAO;
+package Chapter_01.DAO;
 
 /**
  * 자바빈 규약을 따르는 오브젝트를 생성한다.
@@ -14,20 +14,20 @@ public class User {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
     public void setId(String id) {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
