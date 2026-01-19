@@ -23,7 +23,14 @@ import java.sql.SQLException;
  * 것에 관한 관심이다. 이 관심사를 담은 코드를 UserDao 에서 분리하지 않으면 UserDao 는 결코 독립적으로 확장 가능한
  * 클래스가 될 수 없다.
  * -
- * 마지막 남은 관심사를 분리하기 전에
+ * 마지막 남은 관심사를 분리하기 전에 '오브젝트 간 클라이언트' 개념에 대해서 이야기해보고자 한다.
+ * 두 개의 오브젝트가 있고 한 오브젝트가 다른 오브젝트의 기능을 사용한다면, 사용되는 쪽이 사용하는 쪽에게 서비스를 제공하는 셈이다.
+ * 따라서 사용되는 오브젝트를 서비스, 사용하는 오브젝트를 클라이언트라고 부를 수 있다.
+ * 왜 뜬금없이 클라이언트 오브젝트를 끄집어내느냐 하면, 바로 이 UserDao 의 클라이언트 오브젝트가 바로 제 3의 관심사항인
+ * UserDao 와 ConnectionMaker 구현 클래스의 관계를 결정해주는 기능을 분리해서 두기에 적절한 곳이기 때문이다.
+ * -
+ * UserDao 의 클라이언트에서 UserDao 를 사용하기 전에, 먼저 UserDao 가 어떤 ConnectionMaker 의 구현 클래스를
+ * 사용할지를 결정하도록 만들어보자.
  */
 public class UserDao5 {
     private final ConnectionMaker connectionMaker;
