@@ -1,0 +1,91 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="페이지-1" id="bgIuiexbGvOY6r8Lb8-H">
+    <mxGraphModel dx="1181" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=top;align=left;spacingTop=20;spacing=10;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;개선한 UserDaoTest-UserDao-ConnectionMaker 구조를 디자인 패턴의 시각으로 보면 전략 패턴(Strategy Pattern)에 해당한다고 볼 수 있다. 전략 패턴은 디자인 패턴의 꽃이라고 불릴 만큼 다양하게 자주 사용되는 패턴이다. 전략 패턴은 **&#39;자신의 기능 맥락에서 필요에 따라 변경이 필요한 알고리즘을 인터페이스를 통해 통째로 외부로 분리시키고, 이를 구현한 구체적인 알고리즘 클래스를 필요에 따라 바꿔서 사용할 수 있게 하는 디자인 패턴&#39;**이다.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="760" x="40" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=top;align=left;spacingTop=32;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&amp;nbsp;개방 폐쇄 원칙은 &#39;클래스나 모듈은 확장에는 열려 있어야 하고 변경에는 닫혀 있어야 한다&#39;라고 할 수 있다. UserDao 는 DB 연결 방법이라는 기능을 확장하는 데는 열려 있다. UserDao 에 전혀 영향을 주지 않고도 얼마든지 기능을 확장할 수 있게 되어 있다. 동시에 UserDao 자신의 핵심 기능을 구현한 코드는 그런 변화에 영향을 받지 않고 유지할 수 있으므로 변경에는 닫혀 있다고 말할 수 있다.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="760" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;fontStyle=1" value="개방 폐쇄 원칙 (OCP, Open-Closed Principle)" vertex="1">
+          <mxGeometry height="30" width="758" x="42" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-16" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="125" width="510" x="140" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-12" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-16" source="D_0XX4LfLNMpEoH9oSPd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D_0XX4LfLNMpEoH9oSPd-7" value="생성/제공&lt;div&gt;사용&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-14" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-16" source="D_0XX4LfLNMpEoH9oSPd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D_0XX4LfLNMpEoH9oSPd-11" value="생성">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-5" parent="D_0XX4LfLNMpEoH9oSPd-16" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;UserDaoTest&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-13" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-16" source="D_0XX4LfLNMpEoH9oSPd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;" target="D_0XX4LfLNMpEoH9oSPd-8" value="사용">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-7" parent="D_0XX4LfLNMpEoH9oSPd-16" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="UserDao" vertex="1">
+          <mxGeometry height="50" width="110" x="210" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-8" parent="D_0XX4LfLNMpEoH9oSPd-16" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="ConnectionMaker" vertex="1">
+          <mxGeometry height="50" width="130" x="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-15" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-16" source="D_0XX4LfLNMpEoH9oSPd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" target="D_0XX4LfLNMpEoH9oSPd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-11" parent="D_0XX4LfLNMpEoH9oSPd-16" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="DConnectionMaker" vertex="1">
+          <mxGeometry height="50" width="130" x="380" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=top;align=left;spacingTop=20;spacing=10;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;개방 폐쇄 원칙은 높은 응집도와 낮은 결합도라는 소프트웨어 개발의 고전적인 원리로도 설명이 가능하다. **응집도가 높다는 건** 하나의 모듈, 클래스가 하나의 책임 또는 관심사에만 집중되어 있다는 것이다.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;**높은 응집도**&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;응집도가 높다는 것은 변화가 일어날 때 해당 모듈에서 변하는 부분이 크다는 것으로 설명할 수도 있다. 즉 변경이 일어날 때 모듈의 많은 부분이 함께 바뀐다면 응집도가 높다고 말할 수 있다. 만약 모듈의 일부분에만 변경이 일어나도 된다면, 모듈 전체에서 어떤 부분이 바뀌어야 하는지 파악해야 하고, 또 그 변경으로 읺 바뀌지 않는 부분에는 다른 영향을 미치지는 않는지 확인해야 하는 이중의 부담이 생긴다.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;**낮은 결합도**&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;낮은 결합도는 높은 응집도보다 더 민감한 원칙이다. 책임과 관심사가 다른 오브젝트 또는 모듈과는 낮은 결합도, 즉 느슨하게 연결된 형태를 유지하는 것이 바람직하다. 느슨한 연결은 관계를 유지하는 데 꼭 필요한 최소한의 방법만 간접적인 형태로 제공하고, 나머지는 서로 독립적이고 알 필요도 없게 만들어주는 것이다. 여기서 결합도란 &#39;하나의 오브젝트가 변경이 일어날 때에 관계를 맺고 있는 다른 오브젝트에게 변화를 요구하는 정도&#39;라고 설명할 수 있다.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="760" x="40" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;fontStyle=1" value="높은 응집도와 낮은 결합도" vertex="1">
+          <mxGeometry height="30" width="758" x="42" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;fontStyle=1" value="전략 패턴" vertex="1">
+          <mxGeometry height="30" width="758" x="42" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-30" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="125" width="510" x="150" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-31" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-30" source="D_0XX4LfLNMpEoH9oSPd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D_0XX4LfLNMpEoH9oSPd-35" value="생성/제공&lt;div&gt;사용&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-32" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-30" source="D_0XX4LfLNMpEoH9oSPd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D_0XX4LfLNMpEoH9oSPd-38" value="생성">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-33" parent="D_0XX4LfLNMpEoH9oSPd-30" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;UserDaoTest&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-34" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-30" source="D_0XX4LfLNMpEoH9oSPd-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;" target="D_0XX4LfLNMpEoH9oSPd-36" value="사용">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-35" parent="D_0XX4LfLNMpEoH9oSPd-30" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="UserDao" vertex="1">
+          <mxGeometry height="50" width="110" x="210" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-36" parent="D_0XX4LfLNMpEoH9oSPd-30" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="ConnectionMaker" vertex="1">
+          <mxGeometry height="50" width="130" x="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-37" edge="1" parent="D_0XX4LfLNMpEoH9oSPd-30" source="D_0XX4LfLNMpEoH9oSPd-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" target="D_0XX4LfLNMpEoH9oSPd-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-38" parent="D_0XX4LfLNMpEoH9oSPd-30" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=middle;align=center;spacingTop=0;" value="DConnectionMaker" vertex="1">
+          <mxGeometry height="50" width="130" x="380" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-39" parent="D_0XX4LfLNMpEoH9oSPd-30" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=0;" value="컨텍스트" vertex="1">
+          <mxGeometry height="20" width="60" x="234" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;textShadow=1;sketch=1;curveFitting=1;jiggle=2;verticalAlign=top;align=left;spacingTop=20;spacing=10;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;**스프링이란 지금까지 설명한 객체지향적 설계원칙과 디자인 패턴에 나타난 장점을 자연스럽게 개발자들이 활용할 수 있게 해주는 프레임워크다.**&lt;/div&gt;&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="760" x="40" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="D_0XX4LfLNMpEoH9oSPd-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;fontStyle=1" value="설계 원칙, 디자인 패턴 그리고 스프링" vertex="1">
+          <mxGeometry height="30" width="758" x="42" y="970" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

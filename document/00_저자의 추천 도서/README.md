@@ -7,3 +7,5 @@ ___
 ## 2. GoF의 디자인 패턴 - 에릭 감마
 
 ## 3. Head First Design Pattern - 에릭 프리먼
+
+## 4. Java 프로그래머를 위한 UML 실전에서는 이것만 쓴다 - 밥 마틴

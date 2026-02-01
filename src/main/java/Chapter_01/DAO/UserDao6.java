@@ -20,6 +20,8 @@ import java.sql.SQLException;
  * 기존의 UserDao 에서는 생성자에게 책임이 있었다. 다른 관심사가 함께 있으니 확장성을 떨어뜨리는 문제를 일으키는 것이다.
  * 이 관심을 분리해서 클라이언트에게 떠념겨보자.
  */
+
+
 public class UserDao6 {
     private final ConnectionMaker connectionMaker;
 

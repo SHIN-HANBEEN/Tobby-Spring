@@ -19,7 +19,7 @@ public class UserDaoTest {
         user.setName("백기선");
         user.setPassword("married");
 
-        UserDao6 userDao6 = new UserDao6(new DConnectionMaker());
+        UserDao6 userDao6 = new DaoFactory().userDao6();
 
         userDao6.add(user);
 
